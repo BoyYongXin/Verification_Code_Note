@@ -65,10 +65,10 @@ def saveImage(filename, size):
 
 
 if __name__ == '__main__':
-    image_path = os.path.join(os.path.dirname((os.path.abspath(__file__))), 'images/2.jpg')
+    image_path = os.path.join(os.path.dirname((os.path.abspath(__file__))), 'images/1.jpg')
     image = Image.open(image_path).convert("L")
     w, h = image.size
     twoValue(image, 100)
     clearNoise(image, 2, 1)
-    path1 = "images/4.png"
+    path1 = "images/salt.png"
     saveImage(path1, image.size)
